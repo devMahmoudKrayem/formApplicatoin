@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrren"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:textColor="#E91E63"
+        android:hint="Enter your name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your age"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#E91E63"
+        android:textAllCaps="false" />
+    <RadioGroup
+        android:id="@+id/radg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/radbt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="young (from 15 to 20)"
+            android:padding="10dp"/>
+        <RadioButton
+            android:id="@+id/radbt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="youths (from 21 to 40)"
+            android:padding="10dp"/>
+        <RadioButton
+            android:id="@+id/radbt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="older (from 41 to 60)"
+            android:padding="10dp"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The programming languages I learned"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/chb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Java"/>
+        <CheckBox
+            android:id="@+id/chb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Python"/>
+        <CheckBox
+            android:id="@+id/chb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="C++"/>
+        <CheckBox
+            android:id="@+id/chb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="PhP"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"/>
+
+
+
+</LinearLayout>
