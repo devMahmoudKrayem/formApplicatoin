@@ -64,7 +64,6 @@
             android:text="female"/>
 
 
-
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
