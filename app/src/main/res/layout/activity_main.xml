@@ -64,10 +64,12 @@
         android:layout_gravity="center"
         android:orientation="horizontal">
         <RadioButton
+            android:id="@+id/femal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="male"/>
         <RadioButton
+            android:id="@+id/male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -122,6 +124,7 @@
         android:layout_marginTop="20dp"
         android:textAllCaps="false"/>
     <TextView
+        android:layout_marginTop="10dp"
         android:id="@+id/tv_1"
         android:layout_width="155dp"
         android:layout_height="wrap_content"

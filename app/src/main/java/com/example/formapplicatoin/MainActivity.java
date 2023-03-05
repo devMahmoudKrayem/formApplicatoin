@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox ch2=findViewById(R.id.chb_2);
         CheckBox ch3=findViewById(R.id.chb_3);
         CheckBox ch4=findViewById(R.id.chb_4);
+        RadioButton femal=findViewById(R.id.femal);
+        RadioButton male=findViewById(R.id.male);
         ch1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,19 +63,24 @@ public class MainActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (one.isChecked()){
-                    result.setText("Young");
-                    scrren.setBackgroundColor(getColor(R.color.purple_500));
+                if (femal.isChecked() || male.isChecked()) {
 
-                }else if (tow.isChecked())
-                {
-                    result.setText("youths");
-                    scrren.setBackgroundColor(getColor(R.color.purple_500));
+                    if (one.isChecked()) {
+                        result.setText("Young");
+                        scrren.setBackgroundColor(getColor(R.color.purple_500));
 
-                }else if (three.isChecked()){
-                    result.setText("older");
-                    scrren.setBackgroundColor(getColor(R.color.purple_500));
-                }
+                    } else if (tow.isChecked()) {
+                        result.setText("youths");
+                        scrren.setBackgroundColor(getColor(R.color.purple_500));
+
+                    } else if (three.isChecked()) {
+                        result.setText("older");
+                        scrren.setBackgroundColor(getColor(R.color.purple_500));
+                    }
+                }else {
+                    result.setText("you should select Gander");
+            }
+
             }
         });
     }
